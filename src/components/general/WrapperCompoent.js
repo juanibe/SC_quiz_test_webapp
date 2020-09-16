@@ -25,10 +25,9 @@ function WrapperComponent(props) {
     }
 
     const loadRoutes = () => {
-        const protectedIndex = [8, 9, 12, 15, 16, 17]
+        const protectedIndex = [1]
 
         const routes = [
-            // { id: 1, path: '/', component: LandingPageComponent },
             { id: 1, path: '/admin', component: () => { return <AdminPanelComponent user={user} /> } },
         ];
 
